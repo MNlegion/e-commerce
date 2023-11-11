@@ -19,7 +19,10 @@ mongoose.connect('mongodb://localhost/e_commerce', {
 
 // Routes
 // ...
-
+app.get('/', (req, res) => {
+    res.send('Hello, this is your Express.js server!');
+  });
+  
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
